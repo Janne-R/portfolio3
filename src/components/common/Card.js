@@ -1,5 +1,11 @@
 import styled from "styled-components";
 
+const Div = styled.div`
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 20px;
+`;
+
 const Image = styled.img`
   width: 100%;
   object-fit: contain;
@@ -12,16 +18,18 @@ const Button = styled.a`
   background-color: cadetblue;
   color: black;
   text-decoration-line: none;
+  margin-top: auto;
+  width: fit-content;
 `;
 
 const Card = ({ title, image, description, githubLink }) => {
   return (
-    <div>
+    <Div>
       <Image src={image} />
       <h2>{title}</h2>
       <p>{description}</p>
       <Button href={githubLink}>GitHub</Button>
-    </div>
+    </Div>
   )
 }
 
