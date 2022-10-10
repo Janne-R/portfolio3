@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 const H1 = styled.h1`
-text-transform: uppercase;
+  text-transform: uppercase;
 `;
 
 const P = styled.p`
-text-transform: uppercase;
-margin-left: 30px;
-margin-top: -10px;
+  text-transform: uppercase;
+  margin-left: 30px;
+  margin-top: -10px;
 `;
 
 const Hr = styled.hr`
