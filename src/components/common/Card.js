@@ -1,24 +1,27 @@
 import styled from "styled-components";
 
 const Image = styled.img`
-    width: 100%;
-    object-fit: contain;
+  width: 100%;
+  object-fit: contain;
+  cursor: pointer;
 `;
 
-const CardContainer = styled.div`
-    padding: 10px;
+const Button = styled.a`
+  border-radius: 5px;
+  padding: 5px 20px;
+  background-color: cadetblue;
+  color: black;
+  text-decoration-line: none;
 `;
 
 const Card = ({ title, image, description, githubLink }) => {
   return (
-    <CardContainer>
+    <div>
       <Image src={image} />
       <h2>{title}</h2>
       <p>{description}</p>
-      <a href={githubLink}>
-        <button>github</button>
-      </a>
-    </CardContainer>
+      <Button href={githubLink}>GitHub</Button>
+    </div>
   )
 }
 
